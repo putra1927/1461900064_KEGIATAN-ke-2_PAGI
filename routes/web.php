@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\datacontroller;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -16,3 +16,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/buku0064',[datacontroller::Class,'buku0064']);
+Route::get('/buku/cari',[datacontroller::Class,'cari']);
+Route::get('/inerjoin0064',[datacontroller::Class,'innerjoin']);
+Route::get('/inerjoin/cari',[datacontroller::Class,'carijoin']);
